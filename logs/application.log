@@ -1,0 +1,33 @@
+2016-04-05 08:50:20,886 - [INFO] - from play in pool-11-thread-5 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2016-04-05 08:50:43,837 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:tcp://localhost/~/callumweb
+
+2016-04-05 08:50:44,306 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-04-05 08:50:44,818 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+Loading Index Page...
+
+2016-04-05 08:50:48,658 - [INFO] - from application in play-akka.actor.default-dispatcher-4 
+Loading Index Page...
+
+2016-04-05 08:50:52,842 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+Loading Login Page...
+
+2016-04-05 08:50:59,787 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
+Submit Login Query...
+
+2016-04-05 08:50:59,811 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
+Loading Login Page...
+
+2016-04-05 08:51:06,257 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
+Submit Login Query...
+
+2016-04-05 08:51:06,279 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
+Loading Index Page...
+
+2016-04-05 08:51:08,240 - [INFO] - from application in play-akka.actor.default-dispatcher-4 
+Loading My Account Page...
+

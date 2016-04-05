@@ -1,10 +1,26 @@
+@(title: String)(content: Html)
 <!DOCTYPE html>
-
-<html>
+<html ng-app>
     <head>
-        <title>Just Play Java</title>
+        <title>@title</title>
+            <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+            <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+            <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="@routes.Assets.versioned("js/angular.min.js")"></script>
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("css/main.css")">
     </head>
     <body>
-        <h1>Just Play Java</h1>
+        @navbar()
+        <div class="wrapper">
+            @content
+        </div>
     </body>
+    <footer>
+        <p>Posted by: Callum Robertson</p>
+    </footer>
 </html>

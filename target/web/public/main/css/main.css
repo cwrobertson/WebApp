@@ -1,0 +1,53 @@
+body .wrapper .loginForm {
+    padding-top: 15%;
+    width: 40%;
+    margin: 0 auto;
+}
+
+body .wrapper .registerForm {
+    padding-top: 12%;
+    width: 40%;
+    margin: 0 auto;
+}
+body .wrapper .loginForm .button {
+    text-align: center;
+}
+
+body .wrapper .registerForm .button {
+    text-align: center;
+}
+
+body .wrapper .flash-index {
+    padding-top: 5%;
+    width: 40%;
+    margin: 0 auto;
+}
+body .wrapper .row {
+    width: 80% !important;
+    margin: 0 auto;
+}
+footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    height:30px;
+    background: #e7e7e7;
+    text-align: center;
+}
+
+body .wrapper .MyAccountDetails{
+    position: fixed;
+    width:50%;
+    height:50%;
+    left:50%;
+    top:50%;
+    margin-left:-25%;
+    margin-top:-12.5%;
+    z-index:100;
+    background: #e7e7e7;
+}
+
+body .wrapper .MyAccountDetails .userdetails {
+    color:#777;
+}

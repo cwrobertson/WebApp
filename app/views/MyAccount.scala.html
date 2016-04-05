@@ -1,0 +1,19 @@
+@(firstName: String, lastName: String, userName: String)
+@main("My Account"){
+<div class="MyAccountDetails">
+    <div class="userdetails" style="padding-top: 17%; text-align: center; ">
+        <div class="form-inline">
+            <label for="firstName">First Name:</label>
+            <input type="text" class="form-control" readonly id="firstName" value=@firstName>
+        </div>
+        <div class="form-inline">
+            <label for="lastName">Last Name:</label>
+            <input type="text" class="form-control" readonly id="lastName" value=@lastName>
+        </div>
+        <div class="form-inline">
+            <label for="lastName">User Name:</label>
+            <input type="text" class="form-control" readonly id="lastName" value=@userName>
+        </div>
+    </div>
+</div>
+}

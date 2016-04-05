@@ -1,0 +1,9 @@
+@main("Web App") {
+    <div class="flash-index">
+        @if(flash.get("success") != null){
+            <div class="alert alert-success fade in" style="text-align: center">
+            @flash.get("success")
+            </div>
+        }
+    </div>
+}
