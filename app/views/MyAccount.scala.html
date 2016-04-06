@@ -1,18 +1,31 @@
-@(firstName: String, lastName: String, userName: String)
+
+@(firstName: String, lastName: String, userName: String, password: String)
 @main("My Account"){
 <div class="MyAccountDetails">
-    <div class="userdetails" style="padding-top: 17%; text-align: center; ">
-        <div class="form-inline">
-            <label for="firstName">First Name:</label>
-            <input type="text" class="form-control" readonly id="firstName" value=@firstName>
+    <div class="bttnShow" style="padding-top:2%;">
+        <div class="col-sm-6">
+            <button type="button" id="displayUserDetails" class="btn btn-primary btn-block">Display User Details</button>
         </div>
-        <div class="form-inline">
-            <label for="lastName">Last Name:</label>
-            <input type="text" class="form-control" readonly id="lastName" value=@lastName>
+        <div class="col-sm-6">
+            <a href="@routes.UpdateController.displayMyUpdate()" id="editUserDetails" class="btn btn-primary btn-block">Go to Google</a>
         </div>
-        <div class="form-inline">
-            <label for="lastName">User Name:</label>
-            <input type="text" class="form-control" readonly id="lastName" value=@userName>
+    </div>
+
+
+    <div id="displayUser">
+        <div class="userdetails" style="padding-top: 10%; text-align: center; ">
+            <div class="form-inline">
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control" readonly id="firstName" value=@firstName>
+            </div>
+            <div class="form-inline">
+                <label for="lastName">Last Name:</label>
+                <input type="text" class="form-control" readonly id="lastName" value=@lastName>
+            </div>
+            <div class="form-inline">
+                <label for="lastName">User Name:</label>
+                <input type="text" class="form-control" readonly id="lastName" value=@userName>
+            </div>
         </div>
     </div>
 </div>

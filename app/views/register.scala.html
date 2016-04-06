@@ -1,6 +1,11 @@
 @(userForm: Form[RegisterModel])
 @main("Register Page"){
     <div class="registerForm">
+        @if(flash.get("error") != null){
+            <div class="alert alert-danger fade in" style="text-align: center">
+            @flash.get("error")
+            </div>
+        }
         <form class="form-horizontal" role="form" method="post" action="@routes.RegisterController.doRegister()">
             <div class="form-group">
                 <label for="firstname">Firstname:</label>

@@ -29,7 +29,12 @@ object register extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,F
 Seq[Any](format.raw/*1.33*/("""
 """),_display_(/*2.2*/main("Register Page")/*2.23*/{_display_(Seq[Any](format.raw/*2.24*/("""
     """),format.raw/*3.5*/("""<div class="registerForm">
-        <form class="form-horizontal" role="form" method="post" action=""""),_display_(/*4.74*/routes/*4.80*/.RegisterController.doRegister()),format.raw/*4.112*/("""">
+        """),_display_(/*4.10*/if(flash.get("error") != null)/*4.40*/{_display_(Seq[Any](format.raw/*4.41*/("""
+            """),format.raw/*5.13*/("""<div class="alert alert-danger fade in" style="text-align: center">
+            """),_display_(/*6.14*/flash/*6.19*/.get("error")),format.raw/*6.32*/("""
+            """),format.raw/*7.13*/("""</div>
+        """)))}),format.raw/*8.10*/("""
+        """),format.raw/*9.9*/("""<form class="form-horizontal" role="form" method="post" action=""""),_display_(/*9.74*/routes/*9.80*/.RegisterController.doRegister()),format.raw/*9.112*/("""">
             <div class="form-group">
                 <label for="firstname">Firstname:</label>
                 <input type="text" class="form-control" name="firstname" required>
@@ -63,11 +68,11 @@ Seq[Any](format.raw/*1.33*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Fri Apr 01 08:58:48 BST 2016
+                  DATE: Wed Apr 06 14:20:47 BST 2016
                   SOURCE: C:/Users/A587853/Documents/GitHub/WebApp/app/views/register.scala.html
-                  HASH: 11d107ba43d43d29edc34fed2b0266a501a389a7
-                  MATRIX: 739->1|858->32|886->35|915->56|953->57|985->63|1112->164|1126->170|1179->202
-                  LINES: 26->1|29->1|30->2|30->2|30->2|31->3|32->4|32->4|32->4
+                  HASH: 9bb930e5c2d9399e9d8bea06aa536ba6041c2c76
+                  MATRIX: 739->1|858->32|886->35|915->56|953->57|985->63|1048->100|1086->130|1124->131|1165->145|1273->227|1286->232|1319->245|1360->259|1407->276|1443->286|1534->351|1548->357|1601->389
+                  LINES: 26->1|29->1|30->2|30->2|30->2|31->3|32->4|32->4|32->4|33->5|34->6|34->6|34->6|35->7|36->8|37->9|37->9|37->9|37->9
                   -- GENERATED --
               */
           

@@ -20,6 +20,16 @@
             @content
         </div>
     </body>
+    <script>
+        function tick(el) {
+        $('#input').attr('type',el.checked ? 'text' : 'password');
+        }
+
+        function togglePasswordVisibility() {
+            $('#password').attr('type',  $('#showPassword').prop('checked') ? 'text' : 'password');
+        }
+</script>
+
     <footer>
         <p>Posted by: Callum Robertson</p>
     </footer>

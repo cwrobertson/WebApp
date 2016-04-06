@@ -21,6 +21,7 @@ public class RegisterModel extends Model {
     @Column(unique=true)
     private String username;
     @Constraints.Required
+    @Constraints.MinLength(5)
     private String password;
 
 

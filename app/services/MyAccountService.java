@@ -80,4 +80,26 @@ public class MyAccountService {
         }
         return null;
     }
+    public String getPassword(){
+        Transaction transaction = Ebean.beginTransaction();
+        try {
+            Connection connection = transaction.getConnection();
+            PreparedStatement ps = connection.prepareStatement("SELECT PASSWORD from REGISTER_MODEL WHERE USERNAME = ?");
+            ps.setString(1, LoginController.session("user"));
+            ResultSet rs = ps.executeQuery();
+            rs.last();
+            String name = rs.getString(1);
+            return name;
+
+
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
+        finally {
+            Ebean.endTransaction();
+        }
+        return null;
+    }
+
 }

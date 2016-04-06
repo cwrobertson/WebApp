@@ -14,7 +14,8 @@ GET    /logout                     controllers.LogoutController.logout()
 
 # My Account
 GET     /myaccount                  controllers.MyAccountController.displayMyAccount()
-
+POST    /success                    controllers.UpdateController.updateMyAccount()
+GET     /update                     controllers.UpdateController.displayMyUpdate()
 #Java
 GET     /java                       controllers.Application.java()
 GET     /scala                      controllers.Application.scala()
