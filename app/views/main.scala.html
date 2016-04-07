@@ -21,15 +21,18 @@
         </div>
     </body>
     <script>
-        function tick(el) {
-        $('#input').attr('type',el.checked ? 'text' : 'password');
-        }
+            $(document).ready(function(){
+                $("#showPassword").click(function(){
+                    if ($("#password").attr("type")=="password") {
+                        $("#password").attr("type", "text");
+                    }
+                    else {
+                        $("#password").attr("type", "password");
+                    }
+                });
+            });
 
-        function togglePasswordVisibility() {
-            $('#password').attr('type',  $('#showPassword').prop('checked') ? 'text' : 'password');
-        }
-</script>
-
+    </script>
     <footer>
         <p>Posted by: Callum Robertson</p>
     </footer>

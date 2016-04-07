@@ -15,7 +15,6 @@ import views.html.MyAccount;
 public class MyAccountController extends Controller {
     public static Result displayMyAccount() {
         Logger.info("Loading My Account Page...");
-        Form<UpdateModel> updateForm = Form.form(UpdateModel.class);
         MyAccountService accountService = new MyAccountService();
         return ok(views.html.MyAccount.render(accountService.getFirstName(),accountService.getLastName(), accountService.getUserName(), accountService.getPassword()));
     }

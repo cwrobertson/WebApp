@@ -1,17 +1,14 @@
-
 @(firstName: String, lastName: String, userName: String, password: String)
 @main("My Account"){
 <div class="MyAccountDetails">
     <div class="bttnShow" style="padding-top:2%;">
         <div class="col-sm-6">
-            <button type="button" id="displayUserDetails" class="btn btn-primary btn-block">Display User Details</button>
+            <a href="@routes.MyAccountController.displayMyAccount()" id="displayUserDetails" class="btn btn-primary btn-block">Display</a>
         </div>
         <div class="col-sm-6">
-            <a href="@routes.UpdateController.displayMyUpdate()" id="editUserDetails" class="btn btn-primary btn-block">Go to Google</a>
+            <a href="@routes.UpdateController.displayMyUpdate()" id="editUserDetails" class="btn btn-primary btn-block">Update</a>
         </div>
     </div>
-
-
     <div id="displayUser">
         <div class="userdetails" style="padding-top: 10%; text-align: center; ">
             <div class="form-inline">

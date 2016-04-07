@@ -14,7 +14,7 @@ import java.sql.SQLException;
  * Created by a587853 on 06/04/2016.
  */
 public class UpdateService {
-        public static void updateUser(Form<UpdateModel> userModelForm) {
+        public static Boolean updateUser(Form<UpdateModel> userModelForm) {
         Transaction transaction = Ebean.beginTransaction();
         try {
         Connection connection = transaction.getConnection();
@@ -27,12 +27,14 @@ public class UpdateService {
         ps.execute();
         transaction.addModification("REGISTER_MODEL",false,true,false);
         Ebean.commitTransaction();
+                return true;
         } catch (SQLException e) {
         e.printStackTrace();
 
         } finally {
         Ebean.endTransaction();
         }
+                return false;
         }
 
 }
