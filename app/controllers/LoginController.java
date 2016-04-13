@@ -22,7 +22,7 @@ public class LoginController extends Controller {
         Form<UserModel> loginForm = Form.form(UserModel.class).bindFromRequest();
         Logger.info("Submit Login Query...");
         if(loginForm.hasErrors()){
-            flash("error", "Invalid login");
+            flash("error", "Incorrect Login Credentials Provided.");
             return redirect(routes.LoginController.displayLogin());
         }
         else{
@@ -31,11 +31,11 @@ public class LoginController extends Controller {
             {
                 session("user", loginForm.get().getUsername());
                 flash("success", "Welcome " +loginForm.get().getUsername());
-                return redirect(routes.Application.index());
+                return redirect(routes.MyAccountController.displayMyAccount());
             }
             else
             {
-                flash("error", "Invalid login");
+                flash("error", "Incorrect Login Credentials Provided.");
                 return redirect(routes.LoginController.displayLogin());
             }
         }

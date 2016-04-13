@@ -30,7 +30,7 @@ public class RegisterController extends Controller {
                 RegisterService registerService = new RegisterService();
                 registerService.registerUser(registerForm);
                 flash("success", "Successfully Registered! Welcome " + registerForm.get().getFirstname() +" " +  registerForm.get().getLastname());
-                return redirect(routes.Application.index());
+                return redirect(routes.LoginController.displayLogin());
         }
     }
 }

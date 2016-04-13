@@ -1,11 +1,17 @@
 @(firstName: String, lastName: String, userName: String, password: String)
 @main("My Account"){
+
 <div class="MyAccountDetails">
-    <div class="bttnShow" style="padding-top:2%;">
-        <div class="col-sm-6">
-            <a href="@routes.MyAccountController.displayMyAccount()" id="displayUserDetails" class="btn btn-primary btn-block">Display</a>
+    <div style="padding-bottom: 1%;">
+    @if(flash.get("success") != null){
+        <div class="alert alert-success fade in" style="text-align: center">
+        @flash.get("success")
         </div>
-        <div class="col-sm-6">
+    }
+    </div>
+
+    <div class="bttnShow" style="padding-top:2%;">
+        <div class="col-sm-12">
             <a href="@routes.UpdateController.displayMyUpdate()" id="editUserDetails" class="btn btn-primary btn-block">Update</a>
         </div>
     </div>

@@ -1,13 +1,13 @@
-2016-04-07 11:34:33,850 - [INFO] - from play in pool-5-thread-3 
+2016-04-13 15:34:41,517 - [INFO] - from play in pool-4-thread-3 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2016-04-07 11:34:51,523 - [INFO] - from play in play-internal-execution-context-1 
+2016-04-13 15:56:56,610 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2016-04-07 11:34:52,771 - [ERROR] - from application in New I/O worker #1 
+2016-04-13 15:56:57,881 - [ERROR] - from application in New I/O worker #1 
 
 
-! @6pk7dckn0 - Internal server error, for (GET) [/] ->
+! @6pm0c86lo - Internal server error, for (GET) [/] ->
 
 play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
 	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:510) ~[play-jdbc_2.10-2.3.4.jar:2.3.4]
@@ -40,216 +40,54 @@ play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evoluti
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
 
-2016-04-07 11:35:08,403 - [INFO] - from play in play-internal-execution-context-1 
+2016-04-13 15:56:57,881 - [ERROR] - from application in New I/O worker #2 
+
+
+! @6pm0c86lo - Internal server error, for (GET) [/] ->
+
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:510) ~[play-jdbc_2.10-2.3.4.jar:2.3.4]
+	at play.api.db.evolutions.EvolutionsPlugin.withLock(Evolutions.scala:531) ~[play-jdbc_2.10-2.3.4.jar:2.3.4]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:485) ~[play-jdbc_2.10-2.3.4.jar:2.3.4]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:483) ~[play-jdbc_2.10-2.3.4.jar:2.3.4]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library.jar:na]
+	at play.api.db.evolutions.EvolutionsPlugin.onStart(Evolutions.scala:483) ~[play-jdbc_2.10-2.3.4.jar:2.3.4]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:91) ~[play_2.10-2.3.4.jar:2.3.4]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:91) ~[play_2.10-2.3.4.jar:2.3.4]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:91) ~[play_2.10-2.3.4.jar:2.3.4]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:91) ~[play_2.10-2.3.4.jar:2.3.4]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:91) ~[play_2.10-2.3.4.jar:2.3.4]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.10-2.3.4.jar:2.3.4]
+	at play.api.Play$.start(Play.scala:90) ~[play_2.10-2.3.4.jar:2.3.4]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:157) ~[play_2.10-2.3.4.jar:2.3.4]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:130) ~[play_2.10-2.3.4.jar:2.3.4]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:130) ~[play_2.10-2.3.4.jar:2.3.4]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:128) ~[play_2.10-2.3.4.jar:2.3.4]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:128) ~[play_2.10-2.3.4.jar:2.3.4]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.10-2.3.4.jar:2.3.4]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+
+2016-04-13 15:57:00,802 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2016-04-07 11:35:08,761 - [INFO] - from play in play-internal-execution-context-1 
+2016-04-13 15:57:01,179 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2016-04-07 11:35:09,323 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
+2016-04-13 15:57:01,363 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
 Loading Index Page...
 
-2016-04-07 11:36:29,503 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
-Loading Register Page...
-
-2016-04-07 11:36:39,050 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
+2016-04-13 15:57:26,538 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
 Loading Login Page...
 
-2016-04-07 11:36:42,341 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
+2016-04-13 15:57:28,450 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
 Loading Register Page...
-
-2016-04-07 11:37:19,193 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
-Submit Register Query...
-
-2016-04-07 11:37:19,239 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
-Loading Register Page...
-
-2016-04-07 11:37:46,058 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
-Submit Register Query...
-
-2016-04-07 11:37:46,105 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
-Loading Index Page...
-
-2016-04-07 11:37:57,956 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
-Loading Login Page...
-
-2016-04-07 11:38:11,778 - [INFO] - from application in play-akka.actor.default-dispatcher-16 
-Submit Login Query...
-
-2016-04-07 11:38:12,558 - [INFO] - from application in play-akka.actor.default-dispatcher-16 
-Loading Index Page...
-
-2016-04-07 11:38:18,619 - [INFO] - from application in play-akka.actor.default-dispatcher-16 
-Loading My Account Page...
-
-2016-04-07 11:38:34,536 - [INFO] - from application in play-akka.actor.default-dispatcher-17 
-Loading My Account Page...
-
-2016-04-07 11:39:03,623 - [INFO] - from application in play-akka.actor.default-dispatcher-18 
-Submit Update Query...
-
-2016-04-07 11:39:06,946 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
-Submit Update Query...
-
-2016-04-07 11:39:09,614 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
-Submit Update Query...
-
-2016-04-07 11:39:09,957 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
-Submit Update Query...
-
-2016-04-07 11:39:10,238 - [INFO] - from application in play-akka.actor.default-dispatcher-17 
-Submit Update Query...
-
-2016-04-07 11:39:19,979 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
-Submit Update Query...
-
-2016-04-07 11:39:21,852 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
-Submit Update Query...
-
-2016-04-07 11:39:23,584 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
-Loading My Account Page...
-
-2016-04-07 11:39:37,563 - [INFO] - from application in play-akka.actor.default-dispatcher-22 
-Loading Index Page...
-
-2016-04-07 11:40:04,397 - [INFO] - from application in play-akka.actor.default-dispatcher-26 
-Loading My Account Page...
-
-2016-04-07 11:40:10,965 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-Submit Update Query...
-
-2016-04-07 11:40:12,712 - [INFO] - from application in play-akka.actor.default-dispatcher-28 
-Loading My Account Page...
-
-2016-04-07 11:40:34,762 - [INFO] - from application in play-akka.actor.default-dispatcher-26 
-Loading Index Page...
-
-2016-04-07 11:42:28,805 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
-Loading Java Page...
-
-2016-04-07 11:42:29,726 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
-Loading Scala Page...
-
-2016-04-07 11:42:30,350 - [INFO] - from application in play-akka.actor.default-dispatcher-36 
-Loading Groovy Page...dcout
-
-2016-04-07 11:42:31,005 - [INFO] - from application in play-akka.actor.default-dispatcher-36 
-Loading Python Page...
-
-2016-04-07 11:42:31,567 - [INFO] - from application in play-akka.actor.default-dispatcher-35 
-Loading Python Page...
-
-2016-04-07 11:42:32,222 - [INFO] - from application in play-akka.actor.default-dispatcher-35 
-Loading Ruby Page...
-
-2016-04-07 11:42:32,924 - [INFO] - from application in play-akka.actor.default-dispatcher-39 
-Loading Python Page...
-
-2016-04-07 11:42:33,251 - [INFO] - from application in play-akka.actor.default-dispatcher-39 
-Loading Groovy Page...dcout
-
-2016-04-07 11:42:33,626 - [INFO] - from application in play-akka.actor.default-dispatcher-39 
-Loading Scala Page...
-
-2016-04-07 11:42:34,000 - [INFO] - from application in play-akka.actor.default-dispatcher-41 
-Loading Java Page...
-
-2016-04-07 11:42:35,139 - [INFO] - from application in play-akka.actor.default-dispatcher-41 
-Loading Ruby Page...
-
-2016-04-07 11:42:35,623 - [INFO] - from application in play-akka.actor.default-dispatcher-41 
-Loading Python Page...
-
-2016-04-07 11:42:36,481 - [INFO] - from application in play-akka.actor.default-dispatcher-41 
-Loading Groovy Page...dcout
-
-2016-04-07 11:42:36,902 - [INFO] - from application in play-akka.actor.default-dispatcher-3 
-Loading Scala Page...
-
-2016-04-07 11:42:37,167 - [INFO] - from application in play-akka.actor.default-dispatcher-36 
-Loading Java Page...
-
-2016-04-07 11:42:39,039 - [INFO] - from application in play-akka.actor.default-dispatcher-39 
-Loading Index Page...
-
-2016-04-07 11:43:24,459 - [INFO] - from play in play-internal-execution-context-5 
-database [default] connected at jdbc:h2:mem:play
-
-2016-04-07 11:43:24,911 - [INFO] - from play in play-internal-execution-context-5 
-Application started (Dev)
-
-2016-04-07 11:43:24,927 - [INFO] - from application in play-akka.actor.default-dispatcher-36 
-Loading Index Page...
-
-2016-04-07 11:45:42,162 - [INFO] - from play in play-internal-execution-context-7 
-database [default] connected at jdbc:h2:mem:play
-
-2016-04-07 11:45:42,645 - [INFO] - from play in play-internal-execution-context-7 
-Application started (Dev)
-
-2016-04-07 11:45:42,661 - [INFO] - from application in play-akka.actor.default-dispatcher-45 
-Loading Index Page...
-
-2016-04-07 11:46:38,310 - [INFO] - from application in play-akka.actor.default-dispatcher-50 
-Loading Java Page...
-
-2016-04-07 11:46:39,012 - [INFO] - from application in play-akka.actor.default-dispatcher-45 
-Loading Scala Page...
-
-2016-04-07 11:46:39,651 - [INFO] - from application in play-akka.actor.default-dispatcher-50 
-Loading Groovy Page...dcout
-
-2016-04-07 11:46:40,104 - [INFO] - from application in play-akka.actor.default-dispatcher-50 
-Loading Python Page...
-
-2016-04-07 11:46:40,541 - [INFO] - from application in play-akka.actor.default-dispatcher-50 
-Loading Ruby Page...
-
-2016-04-07 11:46:40,977 - [INFO] - from application in play-akka.actor.default-dispatcher-56 
-Loading Groovy Page...dcout
-
-2016-04-07 11:46:41,399 - [INFO] - from application in play-akka.actor.default-dispatcher-56 
-Loading Python Page...
-
-2016-04-07 11:46:41,744 - [INFO] - from application in play-akka.actor.default-dispatcher-55 
-Loading Groovy Page...dcout
-
-2016-04-07 11:46:42,103 - [INFO] - from application in play-akka.actor.default-dispatcher-55 
-Loading Scala Page...
-
-2016-04-07 11:46:42,461 - [INFO] - from application in play-akka.actor.default-dispatcher-58 
-Loading Java Page...
-
-2016-04-07 11:46:43,288 - [INFO] - from application in play-akka.actor.default-dispatcher-58 
-Loading Index Page...
-
-2016-04-07 11:49:10,860 - [INFO] - from application in play-akka.actor.default-dispatcher-54 
-Loading My Account Page...
-
-2016-04-07 11:49:12,334 - [INFO] - from application in play-akka.actor.default-dispatcher-54 
-Loading My Account Page...
-
-2016-04-07 11:49:13,802 - [INFO] - from application in play-akka.actor.default-dispatcher-63 
-Loading My Account Page...
-
-2016-04-07 11:49:14,651 - [INFO] - from application in play-akka.actor.default-dispatcher-64 
-Loading My Account Page...
-
-2016-04-07 11:49:19,620 - [INFO] - from application in play-akka.actor.default-dispatcher-64 
-Loading My Account Page...
-
-2016-04-07 11:49:22,296 - [INFO] - from application in play-akka.actor.default-dispatcher-62 
-Loading My Account Page...
-
-2016-04-07 11:49:23,944 - [INFO] - from application in play-akka.actor.default-dispatcher-62 
-Loading My Account Page...
-
-2016-04-07 11:49:25,294 - [INFO] - from application in play-akka.actor.default-dispatcher-61 
-Loading My Account Page...
-
-2016-04-07 11:50:43,550 - [INFO] - from application in play-akka.actor.default-dispatcher-64 
-Loading Index Page...
-
-2016-04-07 11:50:53,252 - [INFO] - from application in play-akka.actor.default-dispatcher-69 
-Loading My Account Page...
 

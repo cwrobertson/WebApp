@@ -11755,7 +11755,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 11270ms :: artifacts dl 386ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 16408ms :: artifacts dl 235ms[0m
 [0m[[0mdebug[0m] [0m	report for default#webapp-build;0.1-SNAPSHOT compile produced in C:\Users\A587853\Documents\GitHub\WebApp\project\target\resolution-cache\reports\default-webapp-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#webapp-build;0.1-SNAPSHOT runtime produced in C:\Users\A587853\Documents\GitHub\WebApp\project\target\resolution-cache\reports\default-webapp-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#webapp-build;0.1-SNAPSHOT test produced in C:\Users\A587853\Documents\GitHub\WebApp\project\target\resolution-cache\reports\default-webapp-build-test.xml[0m
@@ -11769,5 +11769,5 @@
 [0m[[0mdebug[0m] [0m	report for default#webapp-build;0.1-SNAPSHOT docs produced in C:\Users\A587853\Documents\GitHub\WebApp\project\target\resolution-cache\reports\default-webapp-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#webapp-build;0.1-SNAPSHOT pom produced in C:\Users\A587853\Documents\GitHub\WebApp\project\target\resolution-cache\reports\default-webapp-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#webapp-build;0.1-SNAPSHOT scala-tool produced in C:\Users\A587853\Documents\GitHub\WebApp\project\target\resolution-cache\reports\default-webapp-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (11270ms resolve - 386ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (16408ms resolve - 235ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
